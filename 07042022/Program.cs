@@ -8,10 +8,8 @@ namespace CSharp_Generic_Indexer_Yield_Collections
     {
         static void Main(string[] args)
         {
-            // Generic Collections
-            // Stack
-            //Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
+          
+            
             Console.WriteLine("\n=======Generic Collections=======\n");
 
             Console.WriteLine("\n=======Stack=======\n");
@@ -31,7 +29,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("peek: " + myStack.Peek());
             Console.WriteLine("pop: " + myStack.Pop());
 
-            //Queue
+           
             Console.WriteLine("\n=======Queue=======\n");
 
             Queue<int> myQueue = new Queue<int>();
@@ -49,7 +47,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("peek: " + myQueue.Peek());
             Console.WriteLine("dequeue: " + myQueue.Dequeue());
 
-            //SortedList
+            
             Console.WriteLine("\n=======SortedList=======\n");
 
             SortedList<string, string> cities = new SortedList<string, string>()
@@ -69,7 +67,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("------------------------");
             foreach (var value in cities.Values) { Console.WriteLine("value: " + value); }
 
-            //Dictionary
+            
             Console.WriteLine("\n=======Dictionary=======\n");
 
             Dictionary<int, string> dic = new Dictionary<int, string>();
@@ -91,11 +89,10 @@ namespace CSharp_Generic_Indexer_Yield_Collections
 
             foreach (var value in dic.Values) { Console.WriteLine("value: " + value); }
 
-            //HashSet
             Console.WriteLine("\n=======HashSet=======\n");
 
             HashSet<string> myhash1 = new HashSet<string>();
-            //Console.WriteLine("my hash-1:\n");
+           
             myhash1.Add("Iphone");
             myhash1.Add("Xiaomi");
             myhash1.Add("Samsung");
@@ -114,8 +111,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("------------------------");
             Console.WriteLine("my hash-2:\n");
 
-            //Console.WriteLine("my hash-1 union with my hash-2:\n");
-            //myhash1.UnionWith(myhash2);
+            
             foreach (var h in myhash1) { Console.WriteLine(h); }
 
             Console.WriteLine("------------------------");
@@ -128,7 +124,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             myhash1.ExceptWith(myhash2);
             foreach (var h in myhash1) { Console.WriteLine(h); }
 
-            //List
+            
             Console.WriteLine("\n=======List=======\n");
 
             List<int> primeNumbers = new List<int>();
@@ -170,9 +166,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             evenNumbers.RemoveAt(0);
             foreach (var h in evenNumbers) { Console.WriteLine(h); }
 
-            // Non-Generic Collections
-            // ArrayList
-            //Console.BackgroundColor = ConsoleColor.DarkRed;
+            
             Console.WriteLine("\n=======Non-Generic Collections=======\n");
 
             Console.WriteLine("\n=======ArrayList=======\n");
@@ -196,11 +190,9 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             myQ.Enqueue("Hello");
             myQ.Enqueue("World!");
 
-            // istenilen type-da element elave etmek mumkundur.
-
-            //arlist1.AddRange(arlist2); //adding arraylist in arraylist 
-            arlist1.AddRange(arr); //adding array in arraylist 
-            arlist1.AddRange(myQ); //adding Queue in arraylist
+            
+            arlist1.AddRange(arr); 
+            arlist1.AddRange(myQ); 
 
             var firstElement = arlist1[0];
             var secondElement = arlist1[1];
@@ -222,7 +214,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             arlist1.RemoveRange(2, 4);
             foreach (var item in arlist1) { Console.WriteLine(item); }
 
-            //SortedList
+           
             Console.WriteLine("\n=======SortedList=======\n");
 
             SortedList sortedList = new SortedList();
@@ -238,7 +230,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("After clear list: ");
             foreach (var item in sortedList.Values) { Console.WriteLine("value: " + item); }
 
-            //Stack
+         
             Console.WriteLine("\n=======Stack=======\n");
 
             Stack stack = new Stack();
@@ -257,7 +249,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("peek: " + stack.Peek());
             Console.WriteLine("pop: " + stack.Pop());
 
-            //Queue
+          
             Console.WriteLine("\n=======Queue=======\n");
 
             Queue queue = new Queue();
@@ -275,7 +267,7 @@ namespace CSharp_Generic_Indexer_Yield_Collections
             Console.WriteLine("peek: " + queue.Peek());
             Console.WriteLine("dequeue: " + queue.Dequeue());
 
-            //HashTable
+          
             Console.WriteLine("\n=======Hashtable=======\n");
 
             var cities1 = new Hashtable(){
